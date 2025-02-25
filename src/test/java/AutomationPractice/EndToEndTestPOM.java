@@ -27,7 +27,7 @@ import TestComponents.retry;
 
 
 public class EndToEndTestPOM extends BaseTest {
-	@Test(dataProvider = "getData")
+	@Test(dataProvider = "getData", groups = {"Regression"})
 	public void endToEndTest(HashMap<String, String> input) throws IOException {
 
 		productPage productCatalogue = loginPage.loginCredentials(input.get("mail"), input.get("password"));
