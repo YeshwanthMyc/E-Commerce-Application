@@ -45,7 +45,7 @@ public class BaseTest {
 		return driver;
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public LandingPage launchApplication() throws IOException {
 		initializeDriver();
 		this.loginPage = new LandingPage(driver);
@@ -53,7 +53,7 @@ public class BaseTest {
 		return loginPage;
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void closeBrowser() throws IOException {
 		driver.quit();
 	}
