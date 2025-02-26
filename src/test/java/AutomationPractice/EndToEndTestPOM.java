@@ -25,7 +25,7 @@ import PageObjectModel.productPage;
 import TestComponents.BaseTest;
 import TestComponents.retry; 
 
-
+//test cicd
 public class EndToEndTestPOM extends BaseTest {
 	@Test(dataProvider = "getData", groups = {"Regression"})
 	public void endToEndTest(HashMap<String, String> input) throws IOException {
