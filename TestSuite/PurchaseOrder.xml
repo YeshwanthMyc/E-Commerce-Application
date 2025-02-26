@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" parallel="tests">
 <listeners>
 <listener class-name="TestComponents.Listeners"></listener>
 </listeners>
-  <test thread-count="5" name="Test">
+
+  <test thread-count="5" name="PurchaseOrder">
     <classes>
       <class name="AutomationPractice.EndToEndTestPOM"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="LoginPageErrorValidation">
+    <classes>
+      <class name="AutomationPractice.ErrorValidationsTest"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

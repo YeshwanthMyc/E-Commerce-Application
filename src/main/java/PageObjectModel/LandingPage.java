@@ -26,6 +26,11 @@ public class LandingPage extends ReusableUtilities{
 	@FindBy(id="login")
 	WebElement loginButtonLocator;
 	
+	@FindBy(css="div[aria-label='Incorrect email or password.']")
+	WebElement incorrectUserOrPassLocator;
+	
+	By incorrectUserOrPassBy = By.cssSelector("div[aria-label='Incorrect email or password.']");
+	
 	public void landingPage() {
 		driver.get("https://rahulshettyacademy.com/client/");
 	}
@@ -35,6 +40,11 @@ public class LandingPage extends ReusableUtilities{
 		userPasswordLocator.sendKeys(password);
 		loginButtonLocator.click();
 		return new productPage(driver);
+	}
+	
+	public String incorrectUserNameOrPassword() {
+		waitForElementToAppear(incorrectUserOrPassBy);
+		return incorrectUserOrPassLocator.getText();
 	}
 	
 	

@@ -8,11 +8,46 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,220</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">LoginPageErrorValidation</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">8,417</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">PurchaseOrder</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">16,372</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num attn">2</th><th class="num attn">2</th><th class="num">24,789</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Cucumber.TestNgTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1740212438325</td><td rowspan="1">8654</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginPageErrorValidation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">AutomationPractice.ErrorValidationsTest</td><td><a href="#m0">loginIncorrectCredentialsTest</a></td><td rowspan="1">1740564272334</td><td rowspan="1">1080</td></tr><tr><th colspan="4">LoginPageErrorValidation &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">AutomationPractice.ErrorValidationsTest</td><td><a href="#m1">loginIncorrectCredentialsTest</a></td><td rowspan="1">1740564268729</td><td rowspan="1">1495</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">PurchaseOrder &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">AutomationPractice.EndToEndTestPOM</td><td><a href="#m2">ordersPageValidation</a></td><td rowspan="1">1740564280341</td><td rowspan="1">1482</td></tr><tr><th colspan="4">PurchaseOrder &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">AutomationPractice.EndToEndTestPOM</td><td><a href="#m3">ordersPageValidation</a></td><td rowspan="1">1740564277013</td><td rowspan="1">1548</td></tr><tr><th colspan="4">PurchaseOrder &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">AutomationPractice.EndToEndTestPOM</td><td><a href="#m4">endToEndTest</a></td><td rowspan="1">1740564269930</td><td rowspan="1">4247</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Cucumber.TestNgTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Postive case of purchase order&quot;</td><td>&quot;To create a purchase order in an e-commerce application&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>LoginPageErrorValidation</h2><h3 id="m0">AutomationPractice.ErrorValidationsTest#loginIncorrectCredentialsTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect1 email or password.]
+	at AutomationPractice.ErrorValidationsTest.loginIncorrectCredentialsTest(ErrorValidationsTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">AutomationPractice.ErrorValidationsTest#loginIncorrectCredentialsTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect1 email or password.]
+	at AutomationPractice.ErrorValidationsTest.loginIncorrectCredentialsTest(ErrorValidationsTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>PurchaseOrder</h2><h3 id="m2">AutomationPractice.EndToEndTestPOM#ordersPageValidation</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=India, password=Vijay@619., product=ADIDAS ORIGINAL, mail=vijay619@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at AutomationPractice.EndToEndTestPOM.ordersPageValidation(EndToEndTestPOM.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">AutomationPractice.EndToEndTestPOM#ordersPageValidation</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=India, password=Vijay@619., product=ADIDAS ORIGINAL, mail=vijay619@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at AutomationPractice.EndToEndTestPOM.ordersPageValidation(EndToEndTestPOM.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">AutomationPractice.EndToEndTestPOM#endToEndTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=India, password=Vijay@619., product=ADIDAS ORIGINAL, mail=vijay619@gmail.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="LoginPageErrorValidation(failed)">
     <classes>
-      <class name="Cucumber.TestNgTestRunner">
+      <class name="AutomationPractice.ErrorValidationsTest">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="launchApplication"/>
+          <include name="loginIncorrectCredentialsTest"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- Cucumber.TestNgTestRunner -->
+      </class> <!-- AutomationPractice.ErrorValidationsTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- LoginPageErrorValidation(failed) -->
+  <test thread-count="5" parallel="tests" name="PurchaseOrder(failed)">
+    <classes>
+      <class name="AutomationPractice.EndToEndTestPOM">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="ordersPageValidation" invocation-numbers="0 0"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- AutomationPractice.EndToEndTestPOM -->
+    </classes>
+  </test> <!-- PurchaseOrder(failed) -->
+</suite> <!-- Failed suite [Suite] -->
